@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+.header {
+  width: 100%;
+  height: 97px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.headermenu {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 15px;
+}
+
+.section {
+  width: 100%;
+}
+
+.divone {
+  width: 100%;
+  height: 550px;
+}
+
+.divtwo {
+  width: 100%;
+  height: 140px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #404040;
+}
+
+.divthree {
+  width: 100%;
+  height: 247px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.divthreebox {
+  width: 346.66px; 
+  height: 217px;
+}
+
+.divthreeboxtext {
+  padding: 24px 24px 24px 24px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 80%;
+  position: relative;
+  top: 5px;
+}
+
+.divfour {
+  width: 100%;
+  height: 352px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.divfourbox {
+  width: 1040px;
+  height: 42;
+  border-bottom: solid #d8d8d8 1px;
+}
+
+.divfourboxtextflex {
+  padding: 11px 0px 11px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.divfourboxdate {
+  font-size: 12px;
+  color: #616060;
+}
+
+.divfourboxtext {
+  font-size: 14px;
+  word-spacing: 4px;
+}
+
+.divfourboxtextcolor {
+  color: #a5a5a7;
+}
+
+.divfive {
+  width: 100%;
+  height: 134px;
+  background-color: #F8f8f8;
+  text-align: center;
+}
+
+.divsix {
+  width: 100%;
+  height: 272.06px;
+  background-color:  #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 427px;
+  background-color: #001255;
+  color: #ffffff;
+}
+
+.footerbox {
+  text-align: center;
+  margin: 0px 188px 0px 188px;
+  padding: 0px 12px 0px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerdivone {
+  width: 100%;
+  height: 239px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.footerdivonetitle {
+  font-size: 14px;
+}
+
+.footerdivonecontents {
+  font-size: 12px;
+  line-height: 90%;
+}
+
+.footerdivoneinterval {
+  position: relative;
+  top: 10px;
+}
+
+.footerdivtwo {
+  width: 100%;
+  height: 33px;
+}
+
+.footerdivthree {
+  width: 100%;
+  height: 52px;
+}
+
+.footerdivfour {
+  width: 100%;
+  height: 55px;
+  font-size: 11px;
+}
+
+.footerdivfourspan {
+  margin-left: 15px;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
