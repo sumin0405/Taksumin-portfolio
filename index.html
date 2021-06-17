@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./home.css">
+  <title>TAKSUMIN PORTFOLIO</title>
+</head>
+
+<body>
+  <section class="main">
+    <div class="main_img">
+      <img src="./image/1.png">
+    </div>
+    <div class="main_text">
+      <h2>TAK SUMIN</h2>
+    </div>
+    <div class="main_navbar">
+      <a href="./index.html" class="main_logo">FILM MAKER</a>
+      <ul>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./fim.html">Film</a></li>
+        <li><a href="./photography.html">Photography</a></li>
+        <li><a href="./project.html">Project</a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about_content" data-trigger>
+      <div class="about_contentText">
+        <h2>'바쁜 하루는 피곤하고 한가한 하루는 괴로운 법이다.'</h2>
+        <p>한가한 하루보다는 바쁜 하루를 추구하고</p>
+        <p>매 순간 최선을 다하고자 하는 <span>영화감독 지망생 탁수민</span>입니다.</p>
+      </div>
+      <div class="about_contentButton">
+        <a href="">
+          <h2>저에 관해 더 궁금하시다면</h2>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="film">
+    <div class="film_video">
+      <video src="./video/movie.mp4" autoplay muted loop></video>
+    </div>
+  </section>
+  <section class="photography">
+
+  </section>
+  <section class="project">
+
+  </section>
+  <section class="footer">
+    <footer></footer>
+  </section>
+  <script type="text/javascript" src="./scrolltrigger.js">
+  </script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const parallax = document.querySelector('.main_img');
+      let scrollPosition = window.pageYOffset;
+
+      parallax.style.transform = 'translateY(' + scrollPosition * .8 + 'px)';
+    });
+
+    const trigger = new ScrollTrigger.default({
+      trigger: {
+        once: true,
+        offset: {
+          viewport: {
+            x: 0,
+            y: (trigger, frame, direction) => {
+              return trigger.visible ? 0 : 0.4
+            }
+          }
+        }
+      }
+    });
+    trigger.add('[data-trigger]');
+  </script>
+</body>
+
+</html>
