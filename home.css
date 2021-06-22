@@ -288,10 +288,9 @@ a
 .film .film_button
 {
   position: absolute;
-  top: 88vh;
-  left: 42.8vw;
+  top: 87vh;
+  left: 42.2vw;
   display: flex;
-  width: 14.4vw;
   justify-content: center;
   align-items: center;
 }
@@ -300,8 +299,9 @@ a
   transition: .5s;
   color: #fff;
   font-weight: 300;
-  margin: 12px 0;
+  margin: 12px 12px 12px 14px;
   transition: .5s;
+  letter-spacing: 0.04em;
 }
 .film .film_button a span
 {
@@ -350,7 +350,7 @@ a
 }
 .film .film_button a span:nth-child(2)
 {
-  top: 24.5%;
+  top: 22%;
   right: 0;
   transform-origin: bottom;
 }
@@ -362,7 +362,7 @@ a
 }
 .film .film_button a span:nth-child(4)
 {
-  top: 24.5%;
+  top: 22%;
   left: 0;
   transform-origin: top;
 }
