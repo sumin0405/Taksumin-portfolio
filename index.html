@@ -41,9 +41,26 @@
     </div>
   </section>
   <section class="film">
-    <div class="film_video">
-      <video src="./video/movie.mp4" autoplay muted loop></video>
+    <div class="film_text" data-trigger>
+      <h2>Film</h2>
+      <p>다양한 단편영화를 제작하며 영화 제작 경험을 쌓고 있습니다.</p>
     </div>
+    <div class="film_slider">
+      <div class="film_sliderImg">
+        <img src="./image/movie1.png">
+      </div>
+      <div class="film_sliderImg">
+        <img src="./image/movie2.png">
+      </div>
+      <div class="film_sliderImg">
+        <img src="./image/movie3.png">
+      </div>
+      <div class="film_sliderButton">
+        <button class="film_slider_button_prev">PREV</button>
+        <button class="film_slider_button_next">NEXT</button>
+      </div>
+    </div>
+
   </section>
   <section class="photography">
 
@@ -57,6 +74,10 @@
   <script type="text/javascript" src="./scrolltrigger.js">
   </script>
   <script>
+    document.querySelector('.film_slider_button_prev').addEventListener('click', function () {
+      document.querySelector('.film_sliderImg').style.transform = 'translate(-100vw)';
+    })
+
     const trigger = new ScrollTrigger.default({
       trigger: {
         once: true,

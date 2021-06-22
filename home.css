@@ -155,7 +155,7 @@ a
   bottom: -10px;
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   position: absolute;
   background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -187,20 +187,77 @@ a
 
 .film
 {
-  background: #3a3a3a;
+  background: #1a1a1a;
+  height: 100vh;
+  width: 100vh;
+  overflow: hidden;
 }
-.film .film_video
+.film .film_text
 {
   position: absolute;
-  top: 0;
-  left: 0;
+  text-align: center;
+  width: 40vw;
+  margin: 5vh 30vw 0vh 30vw;
 }
-.film .film_video video
+.film .film_text h2
 {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-family: 'Poppins', sans-serif;
 }
+.film .film_text h2:before
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105px;
+  height: 1.5px;
+  bottom: 20px;
+  background-color: #fff;
+}
+.film .film_text p
+{
+  position: relative;
+  top: 4vh;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.film .film_slider
+{
+  width: 180vw;
+  position: relative;
+  top: 27vh;
+  right: 35vw;
+}
+.film .film_slider .film_sliderImg
+{
+  float: left;
+}
+.film .film_slider .film_sliderImg img
+{
+  width: 50vw;
+}
+.film .film_slider .film_sliderImg:nth-child(2)
+{
+  position: relative;
+  left: 10vw;
+}
+.film .film_slider .film_sliderImg:nth-child(3)
+{
+  position: relative;
+  left: 20vw;
+}
+.film .film_slider .film_sliderImg .film_sliderbutton_prev
+{
+  margin-right: 50vw;
+}
+
 
 .photography
 {
