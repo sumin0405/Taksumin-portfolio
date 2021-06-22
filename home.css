@@ -20,7 +20,7 @@ section
 }
 a
 {
-    text-decoration: none; color: white;
+  text-decoration: none; color: white;
 }
 
 .main
@@ -30,13 +30,13 @@ a
   position: relative;
   overflow: hidden;
 }
-.main .main_img
+.main .main_video
 {
   position: absolute;
   top: 0;
   left: 0;
 }
-.main .main_img img
+.main .main_video video
 {
   position: fixed;
   width: 100vw;
@@ -58,6 +58,8 @@ a
   font-size: 5.5em;
   line-height: 1em;
   font-weight: 700;
+  position: relative;
+  bottom: 0.5vh;
 }
 .main .main_navbar
 {
@@ -70,18 +72,16 @@ a
   justify-content: space-between;
   align-items: center;
 }
-.main .main_navbar .main_logo
+.main .main_navbar .main_logo img
 {
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1.8em;
-  text-decoration: none;
+  width: 60px;
+  height: 60px;
 }
 .main .main_navbar ul
 {
   position: relative;
   display: flex;
+  bottom: 0.5vh;
 }
 .main .main_navbar ul li
 {
@@ -129,31 +129,61 @@ a
 .about .about_contentText p
 {
   position: relative;
-  top: 4vh;
+  top: 3.5vh;
   font-size: 1.9em;
-  font-weight: 200;
+  font-weight: 100;
 }
 .about .about_contentText span
 {
-  color: #94fdf5;
+  color: #ffffff;
   font-weight: 400;
 }
-.about .about_content .about_contentButton
-{
+.about .about_content .about_contentButton {
   position: relative;
-  top: 9vh;
-  letter-spacing: 0.1em;
+  top: 10vh;
+  width: 140px;  
 }
-.about .about_content .about_contentButton a
+.about .about_content .about_contentButton a span
 {
-  font-size: 1.3em;
-  font-weight: 300;
-  color: rgb(107, 107, 107);
-}
-.about .about_content .about_contentButton a:hover
-{
+  font-size: 1.4em;
+  font-weight: 100;
   color: #fff;
 }
+.about .about_content .about_contentButton a:after
+{
+  background: none repeat scroll 0 0 transparent;
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.about .about_content .about_contentButton a:hover:after
+{
+  width: 108px;
+  left: 0;
+}
+
+
+
+/* .about .about_content .about_contentButton .about_contentButton_effect {
+  stroke-dasharray: 10 200;
+  stroke-dashoffset: -320;
+  stroke-width: 4px;
+  fill: transparent;
+  stroke: #fff;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.about .about_content .about_contentButton:hover .about_contentButton_effect {
+  stroke-width: 2px;
+  stroke-dashoffset: -200;
+  stroke-dasharray: 760;
+} */
+
+
 
 .film
 {
