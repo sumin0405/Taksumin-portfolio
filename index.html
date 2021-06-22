@@ -55,12 +55,12 @@
       <div class="film_sliderImg">
         <img src="./image/movie3.png">
       </div>
-      <div class="film_sliderButton">
-        <button class="film_slider_button_prev">PREV</button>
-        <button class="film_slider_button_next">NEXT</button>
-      </div>
     </div>
-
+    <button class="film_sliderButton_prev">PREV</button>
+    <button class="film_sliderButton_next">NEXT</button>
+    <div class="film_button" xmlns="http://www.w3.org/2000/svg">
+      <a href="./fim.html">영화에 대한 자세한 정보 확인하기</a>
+    </div>
   </section>
   <section class="photography">
 
@@ -74,9 +74,13 @@
   <script type="text/javascript" src="./scrolltrigger.js">
   </script>
   <script>
-    document.querySelector('.film_slider_button_prev').addEventListener('click', function () {
-      document.querySelector('.film_sliderImg').style.transform = 'translate(-100vw)';
-    })
+    document.querySelector('.film_sliderButton_prev').addEventListener('click', function () {
+      document.querySelector('.film_sliderImg').style.transform = 'translate(-60vw)';
+    });
+
+    document.querySelector('.film_sliderButton_next').addEventListener('click', function () {
+      document.querySelector('.film_sliderImg').style.transform = 'translate(60vw)';
+    });
 
     const trigger = new ScrollTrigger.default({
       trigger: {
