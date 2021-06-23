@@ -2,108 +2,130 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./home.css">
-  <title>TAKSUMIN PORTFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./imageslider.css">
+    <title>TAKSUMIN PORTFOLIO</title>
 </head>
 
 <body>
-  <section class="main">
-    <div class="main_video">
-      <video src="./video/1.mp4" autoplay muted loop></video>
-    </div>
-    <div class="main_text">
-      <h2>FILM MAKER</h2>
-    </div>
-    <div class="main_navbar">
-      <div class="main_logo">
-        <a href="./index.html"><img src="./image/logo.png" alt="logo"></a>
-      </div>
-      <ul>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./fim.html">Film</a></li>
-        <li><a href="./photography.html">Photography</a></li>
-        <li><a href="./project.html">Project</a></li>
-      </ul>
-    </div>
-  </section>
-  <section class="about">
-    <div class="about_content" data-trigger>
-      <div class="about_contentText">
-        <h2>'바쁜 하루는 피곤하고 한가한 하루는 괴로운 법이다.'</h2>
-        <p>한가한 하루보다는 바쁜 하루를 추구하고</p>
-        <p>매 순간 최선을 다하고자 하는 <span>영화감독 지망생 탁수민</span>입니다.</p>
-      </div>
-      <div class="about_contentButton">
-        <a href="./about.html"><span>더 알아보기</span></a>
-      </div>
-    </div>
-  </section>
-  <section class="film">
-    <div class="film_text" data-trigger>
-      <h2>Film</h2>
-      <p>다양한 단편영화를 제작하며 영화 제작 경험을 쌓고 있습니다.</p>
-    </div>
-    <div class="film_slider">
-      <div class="film_sliderImg">
-        <img src="./image/movie1.png">
-      </div>
-      <div class="film_sliderImg">
-        <img src="./image/movie2.png">
-      </div>
-      <div class="film_sliderImg">
-        <img src="./image/movie3.png">
-      </div>
-    </div>
-    <button class="film_sliderButton_prev">PREV</button>
-    <button class="film_sliderButton_next">NEXT</button>
-    <div class="film_button">
-      <a href="./fim.html">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <p>영화에 대한 자세한 정보 확인하기</p>
-      </a>
-    </div>
-    <div class="film_box"></div>
-  </section>
-  <section class="photography">
+    <section class="main">
+        <div class="main_video">
+            <video src="./video/1.mp4" autoplay muted loop></video>
+        </div>
+        <div class="main_text">
+            <h2>FILM MAKER</h2>
+        </div>
+        <div class="main_navbar">
+            <div class="main_logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="logo"></a>
+            </div>
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./fim.html">Film</a></li>
+                <li><a href="./photography.html">Photography</a></li>
+                <li><a href="./project.html">Project</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about_content" data-trigger>
+            <div class="about_contentText">
+                <h2>'바쁜 하루는 피곤하고 한가한 하루는 괴로운 법이다.'</h2>
+                <p>한가한 하루보다는 바쁜 하루를 추구하고</p>
+                <p>매 순간 최선을 다하고자 하는 <span>영화감독 지망생 탁수민</span>입니다.</p>
+            </div>
+            <div class="about_contentButton">
+                <a href="./about.html"><span>더 알아보기</span></a>
+            </div>
+        </div>
+    </section>
+    <section class="film">
+        <div class="film_text" data-trigger>
+            <h2>Film</h2>
+            <p>다양한 단편영화를 제작하며 영화 제작 경험을 쌓고 있습니다.</p>
+        </div>
+        <div class="swiper-container">
+            <!-- 보여지는 영역 -->
+            <div class="swiper-wrapper">
+                <!-- div class="swiper-slide" 를 추가하면된다 -->
+                <div class="swiper-slide"><img src="./image/movie1.png"></div>
+                <div class="swiper-slide"><img src="./image/movie2.png"></div>
+                <div class="swiper-slide"><img src="./image/movie3.png"></div>
+            </div>
 
-  </section>
-  <section class="project">
+            <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="film_button">
+            <svg height="44" width="270" xmlns="http://www.w3.org/2000/svg">
+        <rect class="film_buttonEffect" height="44" width="270" />
+        <div class="film_buttonText"><span>영화에 대한 자세한 정보 확인하기</span></div>
+      </svg>
+        </div>
+        <div class="film_box"></div>
+    </section>
+    <section class="photography">
 
-  </section>
-  <section class="footer">
-    <footer></footer>
-  </section>
-  <script type="text/javascript" src="./scrolltrigger.js">
-  </script>
-  <script>
-    document.querySelector('.film_sliderButton_prev').addEventListener('click', function () {
-      document.querySelector('.film_sliderImg').style.transform = 'translate(-60vw)';
-    });
+    </section>
+    <section class="project">
 
-    document.querySelector('.film_sliderButton_next').addEventListener('click', function () {
-      document.querySelector('.film_sliderImg').style.transform = 'translate(60vw)';
-    });
+    </section>
+    <section class="footer">
+        <footer></footer>
+    </section>
 
-    const trigger = new ScrollTrigger.default({
-      trigger: {
-        once: true,
-        offset: {
-          viewport: {
-            x: 0,
-            y: (trigger, frame, direction) => {
-              return trigger.visible ? 0 : 0.4
+    <script type="text/javascript" src="./scrolltrigger.js">
+    </script>
+    <script src="./imageslider.js">
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            //기본 셋팅
+            //방향 셋팅 vertical 수직, horizontal 수평 설정이 없으면 수평
+            direction: 'horizontal',
+            //한번에 보여지는 페이지 숫자
+            slidesPerView: 3,
+            //페이지와 페이지 사이의 간격
+            spaceBetween: 100,
+            //드레그 기능 true 사용가능 false 사용불가
+            debugger: true,
+            //마우스 휠기능 true 사용가능 false 사용불가
+            mousewheel: true,
+            //반복 기능 true 사용가능 false 사용불가
+            loop: true,
+            //선택된 슬라이드를 중심으로 true 사용가능 false 사용불가 djqt
+            centeredSlides: true,
+            // 페이지 전환효과 slidesPerView효과와 같이 사용 불가
+            // effect: 'fade',
+
+            //방향표
+            navigation: {
+                //다음페이지 설정
+                nextEl: '.swiper-button-next',
+                //이전페이지 설정
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+        const trigger = new ScrollTrigger.default({
+            trigger: {
+                once: true,
+                offset: {
+                    viewport: {
+                        x: 0,
+                        y: (trigger, frame, direction) => {
+                            return trigger.visible ? 0 : 0.4
+                        }
+                    }
+                }
             }
-          }
-        }
-      }
-    });
-    trigger.add('[data-trigger]');
-  </script>
+        });
+        trigger.add('[data-trigger]');
+    </script>
 </body>
 
 </html>
