@@ -211,7 +211,7 @@ a {
     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 88vh;
-    left: 41.8vw;
+    left: 41.6vw;
     transform: translateY(-50%);
     width: 260px;
 }
@@ -251,15 +251,6 @@ a {
 }
 
 .carousel-cell:first-child {
-    background-image: url(./image/movie1.png);
-    background-size: cover;
-    width: 50vw;
-    height: 500px;
-    margin: 0 6vw 0 6vw;
-    counter-increment: carousel-cell;
-}
-
-.carousel-cell:nth-child(2) {
     background-image: url(./image/movie2.png);
     background-size: cover;
     width: 50vw;
@@ -268,8 +259,17 @@ a {
     counter-increment: carousel-cell;
 }
 
-.carousel-cell:nth-child(3) {
+.carousel-cell:nth-child(2) {
     background-image: url(./image/movie3.png);
+    background-size: cover;
+    width: 50vw;
+    height: 500px;
+    margin: 0 6vw 0 6vw;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell:nth-child(3) {
+    background-image: url(./image/movie1.png);
     background-size: cover;
     width: 50vw;
     height: 500px;

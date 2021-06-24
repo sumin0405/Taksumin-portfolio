@@ -47,6 +47,7 @@ https://flickity.metafizzy.co
     background: none;
     border: none;
     color: #fff;
+    letter-spacing: 0.05em;
     font-size: 1.6em;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -109,6 +110,6 @@ https://flickity.metafizzy.co
 
 .flickity-prev-next-button.next {
     position: relative;
-    left: 92vw;
+    left: 91.5vw;
     bottom: 26vh;
 }
