@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
-    <link rel="stylesheet" href="./imageslider.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.png">
+    <link rel="stylesheet" href="./flickity.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./image/blacklogo.png">
     <title>TAKSUMIN PORTFOLIO</title>
 </head>
 
@@ -20,7 +20,7 @@
         </div>
         <div class="main_navbar">
             <div class="main_logo">
-                <a href="./index.html"><img src="./image/logo.png" alt="logo"></a>
+                <a href="./index.html"><img src="./image/whitelogo.png" alt="logo"></a>
             </div>
             <ul>
                 <li><a href="./about.html">About</a></li>
@@ -47,18 +47,10 @@
             <h2>Film</h2>
             <p>다양한 단편영화를 제작하며 영화 제작 경험을 쌓고 있습니다.</p>
         </div>
-        <div class="swiper-container">
-            <!-- 보여지는 영역 -->
-            <div class="swiper-wrapper">
-                <!-- div class="swiper-slide" 를 추가하면된다 -->
-                <div class="swiper-slide"><img src="./image/movie1.png"></div>
-                <div class="swiper-slide"><img src="./image/movie2.png"></div>
-                <div class="swiper-slide"><img src="./image/movie3.png"></div>
-            </div>
-
-            <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
         </div>
         <div class="film_button">
             <svg height="44" width="270" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +61,23 @@
         <div class="film_box"></div>
     </section>
     <section class="photography">
-
+        <div class="photography_gallery">
+            <div class="photography_gallery_item">
+                <img src="./image/movie1.png">
+            </div>
+            <div class="photography_gallery_item">
+                <img src="./image/movie1.png">
+            </div>
+            <div class="photography_gallery_item">
+                <img src="./image/movie1.png">
+            </div>
+            <div class="photography_gallery_item">
+                <img src="./image/movie1.png">
+            </div>
+            <div class="photography_gallery_item">
+                <img src="./image/movie1.png">
+            </div>
+        </div>
     </section>
     <section class="project">
 
@@ -80,38 +88,8 @@
 
     <script type="text/javascript" src="./scrolltrigger.js">
     </script>
-    <script src="./imageslider.js">
-    </script>
+    <script src="./flickity.pkgd.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
-            //기본 셋팅
-            //방향 셋팅 vertical 수직, horizontal 수평 설정이 없으면 수평
-            direction: 'horizontal',
-            //한번에 보여지는 페이지 숫자
-            slidesPerView: 3,
-            //페이지와 페이지 사이의 간격
-            spaceBetween: 100,
-            //드레그 기능 true 사용가능 false 사용불가
-            debugger: true,
-            //마우스 휠기능 true 사용가능 false 사용불가
-            mousewheel: true,
-            //반복 기능 true 사용가능 false 사용불가
-            loop: true,
-            //선택된 슬라이드를 중심으로 true 사용가능 false 사용불가 djqt
-            centeredSlides: true,
-            // 페이지 전환효과 slidesPerView효과와 같이 사용 불가
-            // effect: 'fade',
-
-            //방향표
-            navigation: {
-                //다음페이지 설정
-                nextEl: '.swiper-button-next',
-                //이전페이지 설정
-                prevEl: '.swiper-button-prev',
-            },
-
-        });
-
         const trigger = new ScrollTrigger.default({
             trigger: {
                 once: true,
