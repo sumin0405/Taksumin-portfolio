@@ -51,6 +51,7 @@ https://flickity.metafizzy.co
     font-size: 1.6em;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    z-index: 100;
 }
 
 .flickity-prev-next-button.previous:before {

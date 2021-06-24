@@ -257,6 +257,11 @@ a {
     height: 500px;
     margin: 0 6vw 0 6vw;
     counter-increment: carousel-cell;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
 }
 
 .carousel-cell:nth-child(2) {
@@ -266,6 +271,11 @@ a {
     height: 500px;
     margin: 0 6vw 0 6vw;
     counter-increment: carousel-cell;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
 }
 
 .carousel-cell:nth-child(3) {
@@ -275,6 +285,76 @@ a {
     height: 500px;
     margin: 0 6vw 0 6vw;
     counter-increment: carousel-cell;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+.carousel-cell:first-child:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+
+.carousel-cell:nth-child(2):hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+
+.carousel-cell:nth-child(3):hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+}
+
+.carousel-cell_text {
+    position: relative;
+    top: 40vh;
+    left: 3.5vw;
+    color: #fff;
+    line-height: 200%;
+    font-size: 1.3em;
+    font-weight: 200;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 0.1em;
+    opacity: 0;
+}
+
+.carousel-cell_text p {
+    font-size: 1.4em;
+    font-weight: 300;
+    position: relative;
+    right: 0.1vw;
+}
+
+.carousel-cell:hover .carousel-cell_text {
+    opacity: 1;
+}
+
+.film_box1 {
+    width: 20vw;
+    height: 100vh;
+    opacity: 0;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.film_box2 {
+    width: 20vw;
+    height: 100vh;
+    opacity: 0;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
