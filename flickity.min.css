@@ -68,7 +68,7 @@ https://flickity.metafizzy.co
 .flickity-prev-next-button.next:before {
     content: '';
     position: absolute;
-    left: 80%;
+    left: 50%;
     transform: translateX(-50%);
     width: 150px;
     height: 2px;
@@ -104,13 +104,13 @@ https://flickity.metafizzy.co
 }
 
 .flickity-prev-next-button.previous {
-    position: relative;
+    position: absolute;
     left: 2vw;
-    bottom: 26vh;
+    top: 45%
 }
 
 .flickity-prev-next-button.next {
-    position: relative;
-    left: 91.5vw;
-    bottom: 26vh;
+    position: absolute;
+    right: 3vw;
+    top: 45%
 }
