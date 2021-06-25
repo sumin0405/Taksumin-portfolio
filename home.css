@@ -191,7 +191,7 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 80px;
     height: 1px;
     bottom: 20px;
     background-color: #fff;
@@ -213,7 +213,7 @@ a {
     top: 88vh;
     left: 41.6vw;
     transform: translateY(-50%);
-    width: 260px;
+    width: 270px;
 }
 
 .film .film_button .film_buttonEffect {
@@ -232,7 +232,7 @@ a {
     letter-spacing: 0.07em;
     color: #fff;
     top: 43%;
-    left: 54%;
+    left: 52.5%;
     width: 240px;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -490,7 +490,7 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 310px;
+    width: 250px;
     height: 1px;
     bottom: 15px;
     background-color: #fff;
@@ -517,17 +517,17 @@ a {
     object-fit: cover;
 }
 
-.film .film_button {
+.photography .photography_button {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 88vh;
-    left: 41.6vw;
+    top: 92vh;
+    left: 44.2vw;
     transform: translateY(-50%);
-    width: 260px;
+    width: 190px;
 }
 
-.film .film_button .film_buttonEffect {
-    stroke-dasharray: 26 288;
+.photography .photography_button .photography_buttonEffect {
+    stroke-dasharray: 26 208;
     stroke-dashoffset: 35;
     stroke-width: 5px;
     fill: transparent;
@@ -536,37 +536,37 @@ a {
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray .5s;
 }
 
-.film .film_button .film_buttonText {
+.photography .photography_button .photography_buttonText {
     font-size: 1em;
     font-weight: 100;
     letter-spacing: 0.07em;
     color: #fff;
     top: 43%;
-    left: 54%;
-    width: 240px;
+    left: 52.5%;
+    width: 160px;
     position: absolute;
     transform: translate(-50%, -50%);
 }
 
-.film .film_button:hover .film_buttonEffect {
+.photography .photography_button:hover .photography_buttonEffect {
     stroke: rgb(155, 155, 155);
     stroke-width: 2px;
     stroke-dashoffset: 35;
-    stroke-dasharray: 314 0;
+    stroke-dasharray: 234 0;
 }
 
 @media (min-width: 600px) {
     .photography .photography_gallery {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 300px);
+        grid-template-rows: repeat(2, 280px);
         grid-auto-flow: row dense;
     }
     .photography .photography_gallery .photography_gallery_item {
         margin: 0.7rem;
     }
     .photography .photography_gallery .photography_gallery_item:first-child {
-        grid-row: span 1;
+        grid-row: span 2;
     }
     .photography .photography_gallery .photography_gallery_item:nth-child(2) {
         grid-row: span 1;
