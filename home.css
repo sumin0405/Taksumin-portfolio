@@ -174,8 +174,8 @@ a {
 .film .film_text {
     position: absolute;
     text-align: center;
-    width: 40vw;
-    margin: 5vh 30vw 0vh 30vw;
+    width: 96vw;
+    margin: 5vh 2vw 0vh 2vw;
 }
 
 .film .film_text h2 {
@@ -249,6 +249,7 @@ a {
 .carousel {
     position: relative;
     top: 25vh;
+    height: 60vh;
 }
 
 .carousel-cell:first-child {
@@ -474,8 +475,8 @@ a {
 .photo .photo_text {
     position: absolute;
     text-align: center;
-    width: 50vw;
-    margin: 5vh 25vw 0vh 25vw;
+    width: 96vw;
+    margin: 5vh 2vw 0vh 2vw;
 }
 
 .photo .photo_text h2 {
@@ -622,8 +623,8 @@ a {
 .project .project_text {
     position: absolute;
     text-align: center;
-    width: 50vw;
-    margin: 9vh 25vw 0vh 25vw;
+    width: 96vw;
+    margin: 9vh 2vw 0vh 2vw;
 }
 
 .project .project_text h2 {
