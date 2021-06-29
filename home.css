@@ -207,17 +207,24 @@ a {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.film .film_button {
+.film .film_buttonWrapper {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 16em;
+}
+
+.film .film_buttonWrapper .film_button {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 88vh;
-    left: 41.6vw;
-    transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 270px;
     cursor: pointer;
 }
 
-.film .film_button .film_buttonEffect {
+.film .film_buttonWrapper .film_button .film_buttonEffect {
     stroke-dasharray: 26 288;
     stroke-dashoffset: 35;
     stroke-width: 5px;
@@ -227,16 +234,16 @@ a {
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray .5s;
 }
 
-.film .film_button .film_buttonText {
+.film .film_buttonWrapper .film_button .film_buttonText {
     font-size: 1em;
     font-weight: 100;
     letter-spacing: 0.07em;
     color: #fff;
-    top: 43%;
-    left: 52.5%;
+    top: 50%;
+    left: 50%;
     width: 240px;
+    transform: translate(-48%, -65%);
     position: absolute;
-    transform: translate(-50%, -50%);
 }
 
 .film .film_button:hover .film_buttonEffect {
@@ -249,7 +256,7 @@ a {
 .carousel {
     position: relative;
     top: 25vh;
-    height: 60vh;
+    max-height: 60vh;
 }
 
 .carousel-cell:first-child {
@@ -319,8 +326,8 @@ a {
 }
 
 .carousel-cell_text {
-    position: relative;
-    top: 40vh;
+    position: absolute;
+    bottom: 5vh;
     left: 3.5vw;
     color: #fff;
     line-height: 200%;
@@ -511,6 +518,7 @@ a {
 .photo .photo_gallery {
     position: relative;
     top: 25vh;
+    max-height: 60%;
 }
 
 .photo .photo_gallery .photo_gallery_item img {
@@ -536,9 +544,9 @@ a {
 .photo .photo_button {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 94vh;
-    left: 44.2vw;
-    transform: translateY(-50%);
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 190px;
     cursor: pointer;
 }
@@ -736,8 +744,8 @@ a {
     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 92vh;
-    left: 41.1vw;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
     cursor: pointer;
 }
