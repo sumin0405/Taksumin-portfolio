@@ -541,17 +541,24 @@ a {
     filter: none;
 }
 
-.photo .photo_button {
+.photo .photo_buttonWrapper {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 20rem;
+}
+
+.photo .photo_buttonWrapper .photo_button {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 96%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 190px;
     cursor: pointer;
 }
 
-.photo .photo_button .photo_buttonEffect {
+.photo .photo_buttonWrapper .photo_button .photo_buttonEffect {
     stroke-dasharray: 26 208;
     stroke-dashoffset: 35;
     stroke-width: 5px;
@@ -561,7 +568,7 @@ a {
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray .5s;
 }
 
-.photo .photo_button .photo_buttonText {
+.photo .photo_buttonWrapper .photo_button .photo_buttonText {
     font-size: 1em;
     font-weight: 100;
     letter-spacing: 0.07em;
@@ -573,7 +580,7 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.photo .photo_button:hover .photo_buttonEffect {
+.photo .photo_buttonWrapper .photo_button:hover .photo_buttonEffect {
     stroke: rgb(155, 155, 155);
     stroke-width: 2px;
     stroke-dashoffset: 35;
@@ -740,10 +747,17 @@ a {
     height: 50vh;
 }
 
+.project .project_buttonWrapper {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 24rem;
+}
+
 .project .project_button {
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 92vh;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
