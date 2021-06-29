@@ -166,7 +166,7 @@ a {
 
 .film {
     background: #1a1a1a;
-    height: 100vh;
+    height: 105vh;
     width: 100vh;
     overflow: hidden;
 }
@@ -208,10 +208,10 @@ a {
 }
 
 .film .film_buttonWrapper {
-    margin-left: 50%;
+    margin-left: 49.9%;
     transform: translateX(-50%);
     position: relative;
-    margin-top: 16em;
+    margin-top: 16rem;
 }
 
 .film .film_buttonWrapper .film_button {
@@ -256,7 +256,7 @@ a {
 .carousel {
     position: relative;
     top: 25vh;
-    max-height: 60vh;
+    max-height: 65vh;
 }
 
 .carousel-cell:first-child {
@@ -476,14 +476,14 @@ a {
 
 .photo {
     background: #1a1a1a;
-    height: 100vh;
+    height: 105vh;
 }
 
 .photo .photo_text {
     position: absolute;
     text-align: center;
     width: 96vw;
-    margin: 5vh 2vw 0vh 2vw;
+    margin: 3vh 2vw 0vh 2vw;
 }
 
 .photo .photo_text h2 {
@@ -517,8 +517,8 @@ a {
 
 .photo .photo_gallery {
     position: relative;
-    top: 25vh;
-    max-height: 60%;
+    top: 23vh;
+    max-height: 65vh;
 }
 
 .photo .photo_gallery .photo_gallery_item img {
@@ -542,10 +542,10 @@ a {
 }
 
 .photo .photo_buttonWrapper {
-    margin-left: 50%;
+    margin-left: 49.9%;
     transform: translateX(-50%);
     position: relative;
-    margin-top: 20rem;
+    margin-top: 18rem;
 }
 
 .photo .photo_buttonWrapper .photo_button {
@@ -633,6 +633,7 @@ a {
 
 .project {
     background: #1a1a1a;
+    height: 105vh;
 }
 
 .project .project_text {
@@ -748,7 +749,7 @@ a {
 }
 
 .project .project_buttonWrapper {
-    margin-left: 50%;
+    margin-left: 49.9%;
     transform: translateX(-50%);
     position: relative;
     margin-top: 24rem;
