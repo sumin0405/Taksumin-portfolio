@@ -260,7 +260,7 @@ a {
 }
 
 .carousel-cell:first-child {
-    background-image: url(https://drive.google.com/uc?id=1U-6RoT3qVDC1Dvf3srG2-CsxCjYi-wDy);
+    background-image: url(./image/movie2.png);
     background-size: cover;
     width: 50vw;
     height: 500px;
@@ -275,7 +275,7 @@ a {
 }
 
 .carousel-cell:nth-child(2) {
-    background-image: url(https://drive.google.com/uc?id=1GET3mqt_lIBxMKqpwGnd9Eg_ipVNM6or);
+    background-image: url(./image/movie3.png);
     background-size: cover;
     width: 50vw;
     height: 500px;
@@ -290,7 +290,7 @@ a {
 }
 
 .carousel-cell:nth-child(3) {
-    background-image: url(https://drive.google.com/uc?id=1KNqUxKBILGYV34LPE_5tu08sPS5rKpPy);
+    background-image: url(./image/movie1.png);
     background-size: cover;
     width: 50vw;
     height: 500px;
@@ -738,11 +738,11 @@ a {
 }
 
 .project .project_gallery .project_galleryImg:nth-child(2) {
-    margin-left: 8vw;
+    margin-left: 6vw;
 }
 
 .project .project_gallery .project_galleryImg:nth-child(3) {
-    margin-left: 8vw;
+    margin-left: 6vw;
 }
 
 .project .project_gallery .project_galleryImg img {
