@@ -131,6 +131,7 @@ a {
     top: 3.5vh;
     font-size: 1.9em;
     font-weight: 100;
+    letter-spacing: 0.07em;
 }
 
 .about .about_contentText span {
@@ -184,7 +185,7 @@ a {
 .film .film_text h2 {
     color: #fff;
     font-size: 2.5em;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.1em;
     font-family: 'Poppins', sans-serif;
 }
@@ -492,7 +493,7 @@ a {
 .photo .photo_text h2 {
     color: #fff;
     font-size: 2.5em;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.1em;
     font-family: 'Poppins', sans-serif;
 }
@@ -502,7 +503,7 @@ a {
     position: absolute;
     left: 49.8%;
     transform: translateX(-50%);
-    width: 110px;
+    width: 120px;
     height: 1px;
     bottom: 15px;
     background-color: #fff;
@@ -649,7 +650,7 @@ a {
 .project .project_text h2 {
     color: #fff;
     font-size: 2.5em;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.1em;
     font-family: 'Poppins', sans-serif;
 }
@@ -659,7 +660,7 @@ a {
     position: absolute;
     left: 49.8%;
     transform: translateX(-50%);
-    width: 140px;
+    width: 170px;
     height: 1px;
     bottom: 15px;
     background-color: #fff;
