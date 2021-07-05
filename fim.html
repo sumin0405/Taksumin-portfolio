@@ -44,14 +44,14 @@
             </a>
         </div>
         <div class="movie_1_text">
-            <div class="movie_1_text1">Short film</div>
-            <div class="movie_1_text2">가을에 찾아온 위로</div>
-            <div class="movie_1_text3">
+            <div class="movie_1_text1" section-1>Short film</div>
+            <div class="movie_1_text2" section-2>가을에 찾아온 위로</div>
+            <div class="movie_1_text3" section-3>
                 <span>제작 중</span>
                 <span>공동 각본/감독</span>
                 <span>주연</span>
             </div>
-            <div class="movie_1_text4">
+            <div class="movie_1_text4" section-4>
                 <p>우리는 살아가면서 수많은 사람에게 상처를 주고, 상처를 받습니다.</p>
                 <p>사람들은 상처를 치유하기 위해 책을 읽기도 하고, 음악을 듣기도 합니다.</p>
                 <p>하지만 책을 읽고, 음악을 듣는 것만으로는 상처가 온전히 아물지 않습니다.</p>
@@ -74,14 +74,14 @@
             </a>
         </div>
         <div class="movie_2_text">
-            <div class="movie_2_text1">Short film</div>
-            <div class="movie_2_text2">옥상표류기</div>
-            <div class="movie_2_text3">
+            <div class="movie_2_text1" section-1>Short film</div>
+            <div class="movie_2_text2" section-2>옥상표류기</div>
+            <div class="movie_2_text3" section-3>
                 <span>2020.10.10</span>
                 <span>편집/촬영</span>
                 <span>주연 : 정유진</span>
             </div>
-            <div class="movie_2_text4">
+            <div class="movie_2_text4" section-4>
                 <p>우리는 살아가면서 수많은 사람에게 상처를 주고, 상처를 받습니다.</p>
                 <p>사람들은 상처를 치유하기 위해 책을 읽기도 하고, 음악을 듣기도 합니다.</p>
                 <p>하지만 책을 읽고, 음악을 듣는 것만으로는 상처가 온전히 아물지 않습니다.</p>
@@ -104,14 +104,14 @@
             </a>
         </div>
         <div class="movie_3_text">
-            <div class="movie_3_text1">Short film</div>
-            <div class="movie_3_text2">일기</div>
-            <div class="movie_3_text3">
+            <div class="movie_3_text1" section-1>Short film</div>
+            <div class="movie_3_text2" section-2>일기</div>
+            <div class="movie_3_text3" section-3>
                 <span>2020.08.15</span>
                 <span>1인 제작</span>
                 <span>주연 : 김건호</span>
             </div>
-            <div class="movie_3_text4">
+            <div class="movie_3_text4" section-4>
                 <p>우리는 살아가면서 수많은 사람에게 상처를 주고, 상처를 받습니다.</p>
                 <p>사람들은 상처를 치유하기 위해 책을 읽기도 하고, 음악을 듣기도 합니다.</p>
                 <p>하지만 책을 읽고, 음악을 듣는 것만으로는 상처가 온전히 아물지 않습니다.</p>
@@ -130,7 +130,27 @@
             <span><a href="https://www.youtube.com/channel/UCAljrLEAYtqs28p-nCiSzxg"><i class="fab fa-youtube"></i></a></span>
         </div>
     </section>
-
+    <script type="text/javascript" src="./scrolltrigger.js">
+    </script>
+    <script>
+        const trigger = new ScrollTrigger.default({
+            trigger: {
+                once: true,
+                offset: {
+                    viewport: {
+                        x: 0,
+                        y: (trigger, frame, direction) => {
+                            return trigger.visible ? 0 : 0.3
+                        }
+                    }
+                }
+            }
+        });
+        trigger.add('[section-1]');
+        trigger.add('[section-2]');
+        trigger.add('[section-3]');
+        trigger.add('[section-4]');
+    </script>
 </body>
 
 </html>
