@@ -71,9 +71,10 @@ a {
 /*main*/
 
 .main {
-    min-height: 50vh;
+    min-height: 93vh;
     overflow: hidden;
     top: 7vh;
+    position: relative;
 }
 
 .main .main_video {
@@ -85,7 +86,7 @@ a {
 .main .main_video video {
     position: fixed;
     width: 100vw;
-    height: 50vh;
+    height: 93vh;
     object-fit: cover;
     z-index: -10;
 }
@@ -94,17 +95,70 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 88vh;
 }
 
 .main .main_text h2 {
     color: #fff;
-    font-size: 4em;
+    font-size: 2.5em;
     line-height: 1em;
-    letter-spacing: 0.05em;
-    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-weight: 200;
     position: relative;
     bottom: 0.5vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_scroll {
+    padding-top: 70px;
+    position: absolute;
+    top: 87vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_scroll span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 1.5s infinite;
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
 }
 
 
@@ -536,7 +590,7 @@ a {
 [section-1] {
     opacity: 0;
     position: relative;
-    top: 15px;
+    top: 30px;
     transition: .3s ease-in;
 }
 
@@ -548,7 +602,7 @@ a {
 [section-2] {
     opacity: 0;
     position: relative;
-    top: 15px;
+    top: 30px;
     transition: .4s ease-in;
 }
 
@@ -560,7 +614,7 @@ a {
 [section-3] {
     opacity: 0;
     position: relative;
-    top: 15px;
+    top: 30px;
     transition: .5s ease-in;
 }
 
@@ -572,7 +626,7 @@ a {
 [section-4] {
     opacity: 0;
     position: relative;
-    top: 15px;
+    top: 30px;
     transition: .6s ease-in;
 }
 

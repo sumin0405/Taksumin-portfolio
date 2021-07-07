@@ -27,7 +27,10 @@
             <video src="./video/film.mp4" autoplay muted loop></video>
         </div>
         <div class="main_text">
-            <h2>FILM</h2>
+            <h2>' When I’m making a film, I’m the audience '</h2>
+        </div>
+        <div class="main_scroll">
+            <span></span>
         </div>
     </section>
     <section class="movie_1">
@@ -140,7 +143,7 @@
                     viewport: {
                         x: 0,
                         y: (trigger, frame, direction) => {
-                            return trigger.visible ? 0 : 0.3
+                            return trigger.visible ? 0 : 0.2
                         }
                     }
                 }

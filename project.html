@@ -22,6 +22,77 @@
             <li><a href="./project.html">PROJECT</a></li>
         </ul>
     </section>
+    <section class="main">
+        <div class="main_img">
+        </div>
+        <div class="main_scroll">
+            <span></span>
+        </div>
+    </section>
+    <section class="project1">
+        <div class="project1_Wrapper">
+            <div class="project1_img">
+                <img src="./image/project1.png">
+            </div>
+            <div class="project1_explain">
+                <div class="project1_explain_text">
+                    <div class="project1_explain_text1" text1>
+                        <span>PROJECT : 0_100</span>
+                        <span>2020.11 ~ NOW</span>
+                    </div>
+                    <div class="project1_explain_text2" text2>
+                        <p>학교에서의 성교육이 학생들이 필요로 하는</p>
+                        <p>성 지식을 제공하지 못하는 것이 문제이다</p>
+                    </div>
+                    <div class="project1_explain_text3" text3>학교에서의 성교육이 학생들이 필요로 하는 성 지식을 제공하지 못한다는 문제를 해결하기 위해 진행 중인 프로젝트입니다. 중1 ~ 고2 청소년을 대상으로 성교육의 주체가 되는 청소년들의 진솔한 이야기를 들어보고, 청소년의 입장에서 바라본 학교 성교육이 나아가야 할 방향을 제시하는 영상을 제작하고 있습니다.</div>
+                    <div class="project1_explain_button" button>
+                        <a href="https://sumin0405.github.io/project-0100/"><span>더 알아보기</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project2">
+        <div class="project2_Wrapper">
+            <div class="project2_explain">
+                <div class="project2_explain_text">
+                    <div class="project2_explain_text1" text1>
+                        <span>바람, 네오, 지니, 천령</span>
+                        <span>2020.11 ~ 2021.01</span>
+                    </div>
+                    <div class="project2_explain_text2" text2>
+                        <p>노인 빈곤 문제의 해결을 위한 개선 방향</p>
+                    </div>
+                    <div class="project2_explain_text3" text3>지속가능한 도시와 공동체에 대한 학습을 하는 과정에서 행복이 지속가능한 도시와 공동체를 형성하는데 중요한 조건이라는 것을 깨닫게 되었습니다. OECD 통계에 따르면 우리나라의 노인 자살률과 빈곤율이 1위이고, 이에 따라 행복하지 않는 대상을 노인으로 선정 후 노인 빈곤 문제에 초점을 맞추어 노인 빈곤 문제의 해결을 위한 개선 방향을 학습, 구상해보았습니다.</div>
+                    <div class="project2_explain_button" button>
+                        <a href="./about.html"><span>더 알아보기</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project2_img"></div>
+        </div>
+    </section>
+    <section class="project3">
+        <div class="project3_Wrapper">
+            <div class="project3_img"></div>
+            <div class="project3_explain">
+                <div class="project3_explain_text">
+                    <div class="project3_explain_text1" text1>
+                        <span>TEAM : 조용한</span>
+                        <span>2020.02 ~ 2020.07</span>
+                    </div>
+                    <div class="project3_explain_text2" text2>
+                        <p>대다수의 택배박스가</p>
+                        <p>재활용되지 않는 것이 문제이다</p>
+                    </div>
+                    <div class="project3_explain_text3" text3>종이 택배박스에 묻은 이물질, 충분히 제거되지 않는 테이프 등으로 인해 65% 가량의 종이 택배박스가 재활용되지 않는다는 문제를 알게 되었습니다. 이에 대한 해결책으로 다회용 택배박스라는 해결책을 발견하였고, 다회용 택배박스 사용에 대한 실현 가능성, 편의성, 실효성 등을 검토 학습해보았습니다.</div>
+                    <div class="project3_explain_button" button>
+                        <a href="./about.html"><span>더 알아보기</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="footer">
         <div class="footer_contact">
             <span>sumin-3102@daum.net</span>
@@ -32,6 +103,28 @@
             <span><a href="https://www.youtube.com/channel/UCAljrLEAYtqs28p-nCiSzxg"><i class="fab fa-youtube"></i></a></span>
         </div>
     </section>
+    <script src="./project.js"></script>
+    <script type="text/javascript" src="./scrolltrigger.js">
+    </script>
+    <script>
+        const trigger = new ScrollTrigger.default({
+            trigger: {
+                once: true,
+                offset: {
+                    viewport: {
+                        x: 0,
+                        y: (trigger, frame, direction) => {
+                            return trigger.visible ? 0 : 0.2
+                        }
+                    }
+                }
+            }
+        });
+        trigger.add('[text1]');
+        trigger.add('[text2]');
+        trigger.add('[text3]');
+        trigger.add('[button]');
+    </script>
 </body>
 
 </html>
