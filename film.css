@@ -203,6 +203,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 10vh;
+    display: flex;
+    justify-content: center;
 }
 
 .movie_1_img_playButton1_Effect {
@@ -229,7 +231,7 @@ a {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-57.5%, -51%);
+    transform: translate(-50%, -50%);
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
     stroke-dasharray: 1 65;
 }
@@ -328,6 +330,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 10vh;
+    display: flex;
+    justify-content: center;
 }
 
 .movie_2_img_playButton1_Effect {
@@ -354,7 +358,7 @@ a {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-57.5%, -52.5%);
+    transform: translate(-50%, -50%);
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
     stroke-dasharray: 1 65;
 }
@@ -452,6 +456,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 10vh;
+    display: flex;
+    justify-content: center;
 }
 
 .movie_3_img_playButton1_Effect {
@@ -478,7 +484,7 @@ a {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-57.5%, -52%);
+    transform: translate(-50%, -50%);
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
     stroke-dasharray: 1 65;
 }

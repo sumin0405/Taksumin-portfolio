@@ -11,6 +11,10 @@ font-family: 'Noto Sans KR', sans-serif; */
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 section {
     min-width: 100vw;
     min-height: 100vh;

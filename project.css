@@ -178,6 +178,8 @@ a {
     width: 30vw;
     height: 30vw;
     background: #eeeeee;
+    display: flex;
+    justify-content: center;
 }
 
 .project1_explain_text {
