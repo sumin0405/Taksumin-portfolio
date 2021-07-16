@@ -180,10 +180,11 @@ a {
     background: #eeeeee;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .project1_explain_text {
-    margin: 5vw 4vw 5vw 4vw;
+    max-width: 22vw;
 }
 
 .project1_explain_text1 {
@@ -277,10 +278,13 @@ a {
     width: 30vw;
     height: 30vw;
     background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project2_explain_text {
-    margin: 5.5vw 4vw 5vw 4vw;
+    max-width: 22vw;
 }
 
 .project2_explain_text1 {
@@ -374,10 +378,13 @@ a {
     width: 30vw;
     height: 30vw;
     background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project3_explain_text {
-    margin: 5.3vw 4vw 5vw 4vw;
+    max-width: 22vw;
 }
 
 .project3_explain_text1 {
